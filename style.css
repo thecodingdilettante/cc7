@@ -46,7 +46,8 @@ a:active {
     --text-dark: #333333;
     --link-hover: #FDBB30;
   }
-  
+/*Link Ends*/
+
   body {
     margin: 0;
     padding: 0;
@@ -110,7 +111,26 @@ a:active {
   .hero li {
     margin-bottom: 0.25rem;
   }
+
+/* FLEXBOX */
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  background-color: #353218;
+}
+
+.flex-container > div {
+  background-color: #d2d0c5;
+  width: auto;
+  margin: 10px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 15px;
+}
   
+/* BUTTON */
+
   .button {
   display: inline-block;
   border-radius: 4px;
@@ -146,9 +166,14 @@ a:active {
   right: 0;
 }
 
+/* SERVICE SECTION */
+
 .service {
   padding: 20px;
   background-color: #e5e3d3;
+}
+
+/* DEVICES */
 
  /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -157,7 +182,7 @@ a:active {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  body {background-color: #eab4e3;}
+  .service {background-color: #eab4e3;}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -174,4 +199,10 @@ a:active {
 @media only screen and (min-width: 1200px) {
   .service {
     background-color: #e5e3d3;}
+}
+
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
 }
