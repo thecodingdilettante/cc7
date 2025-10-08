@@ -121,7 +121,7 @@ a:active {
 }
 
 .flex-container > div {
-  background-color: #d2d0c5;
+  background-color: #e7e6de;
   width: auto;
   margin: 10px;
   text-align: center;
@@ -131,7 +131,7 @@ a:active {
   
 /* BUTTON */
 
-  .button {
+  .myButton {
   display: inline-block;
   border-radius: 4px;
   background-color: #679F92;
@@ -143,13 +143,13 @@ a:active {
   cursor: pointer;
 }
 
-.button span {
+.myButton span {
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
 
-.button span:after {
+.myButton span:after {
   content: '\00bb';
   position: absolute;
   opacity: 0;
@@ -157,11 +157,11 @@ a:active {
   transition: 0.5s;
 }
 
-.button:hover span {
+.myButton:hover span {
   padding-right: 25px;
 }
 
-.button:hover span:after {
+.myButton:hover span:after {
   opacity: 1;
   right: 0;
 }
