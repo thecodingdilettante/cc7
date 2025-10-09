@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="cc_7.js"></script>
     <link rel="stylesheet" href="style.css">
-    <title>BizNess</title>
+    <title>Business Landing Page</title>
 </head>
 
 <body>
     <header>
-        <h1>BizNess</h1>
-        <p><em>Crazy, Cool, and Funky</em></p>
+        <h1 id="header">Business Landing Page</h1>
+        <p><em>This is the landing page.</em></p>
     <center><div class="link"><a href="" title="Home">Home</a></div>
     <div class="link"><a href="" title="About">About Us</a></div>
     <div class="link"><a href="" title="Products">Products</a></div>
@@ -20,11 +20,11 @@
   </div>
     </header>
 
-
     <main>
         <section><div class="flex-container">
-            <div><h1>Welcome to BizNess</h1></div>
-              <div><p>This is a test designed to provoke an emotional response. Do you want to be hypnotized? All you have to do is move your body in what ever way feels comfortable for you. Just let yourself sink into the groove. Sign up for our subscription boxes.</p>
+            <div><img src="https://www.course-api.com/images/store/product-12.jpeg" alt="Five posters on a white wall" style="width:400px;height:400px;"></div>
+              <div><p>This is a test designed to provoke an emotional response.</p>
+               All you have to do is move your body in what ever way feels comfortable for you.<p>Sign up for our subscription boxes. This button is interactive.</p>
               <p><h2 id="myCallToAction">Ready to begin?</h2></p>
                 <button class="myButton" style="vertical-align:middle" onclick="changeText()"><span>Get started</span></button>
               </p></div>
@@ -33,9 +33,9 @@
           <section>
             <center><form action"">
                   <label for="firstName">First Name: </label><br>
-                  <input type="text" name="firstName" id="firstName"><br>
+                  <input type="text" name="firstName" id="firstName" placeholder="Enter some text"><br>
                   <label for="lastName">Last Name: </label><br>
-                  <input type="text" name="lastName" id="lastName"><br><br>
+                  <input type="text" name="lastName" id="lastName" placeholder="Enter some text"><br><br>
                   <label for="what_brings_you_here">What Brings You Here? </label><br>
                   <label for="hypnotism">Hypnotism</label>
                   <input type="checkbox" name="hypnotism" id="hypnotism" value="Hypnotism">
@@ -44,8 +44,12 @@
                   <label for="produce">Produce</label>
                   <input type="checkbox" name="produce" id="produce" value="Produce">
                   <label for="crafting">Craft Supplies</label>
-                  <input type="checkbox" name="crafting" id="crafting" value="Crafting">
-          </form></center>
+                  <input type="checkbox" name="crafting" id="crafting" value="Crafting"><br><br>
+          </form>
+                    HEADER CHANGER<br>
+                  <input type="text" class="messageInput" id="message" name="message">
+                  <button>Update</button>
+                <p>When you write in the above field, the header changes to your input.</p></center>
         </section>
       
           <section>
@@ -69,7 +73,16 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 BizNess | 555-01-10 | Nowhere, EU</p>
+        <p>&copy; 2025 BizNess | bizness@emailprotocol.com</p>
+        <p>555-01-10 | Nowhere, EU</p>
       </footer>
 </body>
+
+<script>
+        let messageInput = document.querySelector('.messageInput');
+        let result = document.querySelector('#header');
+        messageInput.addEventListener('change', function () {
+            result.textContent = this.value;
+        });
+    </script>
 </html>
