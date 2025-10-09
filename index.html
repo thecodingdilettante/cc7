@@ -10,7 +10,7 @@
 
 <body>
     <header>
-        <h1 id="header">Business Landing Page</h1>
+        <h1>Business Landing Page</h1>
         <p><em>This is the landing page.</em></p>
     <center><div class="link"><a href="" title="Home">Home</a></div>
     <div class="link"><a href="" title="About">About Us</a></div>
@@ -23,8 +23,9 @@
     <main>
         <section><div class="flex-container">
             <div><img src="https://www.course-api.com/images/store/product-12.jpeg" alt="Five posters on a white wall" style="width:400px;height:400px;"></div>
-              <div><p>This is a test designed to provoke an emotional response.</p>
-               All you have to do is move your body in what ever way feels comfortable for you.<p>Sign up for our subscription boxes. This button is interactive.</p>
+              <div><p><h2 id="heroHeader">Welcome</h2></p>
+                <p>This is a test designed to provoke an emotional response.
+               All you have to do is move your body in what ever way feels comfortable for you. Sign up for our subscription boxes. This button is interactive.
               <p><h2 id="myCallToAction">Ready to begin?</h2></p>
                 <button class="myButton" style="vertical-align:middle" onclick="changeText()"><span>Get started</span></button>
               </p></div>
@@ -49,7 +50,7 @@
                     HEADER CHANGER<br>
                   <input type="text" class="messageInput" id="message" name="message">
                   <button>Update</button>
-                <p>When you write in the above field, the header changes to your input.</p></center>
+                <p>When you write in the above field, the hero header changes to your input.</p></center>
         </section>
       
           <section>
@@ -80,7 +81,7 @@
 
 <script>
         let messageInput = document.querySelector('.messageInput');
-        let result = document.querySelector('#header');
+        let result = document.querySelector('#heroHeader');
         messageInput.addEventListener('change', function () {
             result.textContent = this.value;
         });
